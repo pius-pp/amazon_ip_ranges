@@ -5,12 +5,12 @@ This repository provides regularly updated **Amazon Web Services (AWS)** IP rang
 
 ## 📁 Included Files
 
-### `aws_ip_ranges.txt`
+### `amazon_ip_ranges.txt`
 
 A plain-text list of all current AWS IPv4 and IPv6 address ranges.
 Each line contains a single CIDR block, making it easy to use in firewalls, network configurations, or IP filtering tools.
 
-### `aws_ip_ranges.mrs`
+### `amazon_ip_ranges.mrs`
 
 A **Mihomo Rule Set (MRS)** version of the AWS IP ranges.
 Optimized for use with **Clash**, **Mihomo**, and other compatible clients — ideal for creating rules that match AWS traffic.
@@ -37,8 +37,8 @@ rule-providers:
   aws:
     type: http
     behavior: ipcidr
-    path: ./rules/aws_ip_ranges.mrs
-    url: https://your-domain.com/aws_ip_ranges.mrs
+    path: ./rules/amazon_ip_ranges.mrs
+    url: https://github.com/pius-pp/amazon_ip_ranges/raw/refs/heads/main/amazon_ip_ranges.mrs
     interval: 24h
 ```
 
